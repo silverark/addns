@@ -24,6 +24,7 @@ func main() {
 	fileLocation := ""
 	//We should first look for the config file. Check to local directory, then check the users profile
 	if _, err := os.Stat("./" + filename); err == nil {
+		fmt.Println("Using the Config from the same directory as the app")
 		fileLocation = "./" + filename
 	} else if _, err := os.Stat(os.Getenv("HOME") + "/" + filename); err == nil {
 		fmt.Println("Using the Config from your Home directory")
