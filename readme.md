@@ -1,6 +1,6 @@
 # ADDNS - Ark Dynamic DNS
 
-A simple application to update the IP address of an A record of a domain you own in Linode. the application is written in [Go](https://golang.org/)
+A simple application to update the IP address of an A record of a domain you own in Linode. The application is written in [Go](https://golang.org/)
 
 ## Set up the Config File
 Copy and rename the example config file 'addns.json.example' to 'addns.json'. You can place this in the same folder as 
@@ -10,7 +10,7 @@ the binary, or in your home folder. The application will look in the same folder
 cp addns.json.example addns.json
 ```
 
-Make sure you stick tot eh types defined. The access token is a string. The ID's are integers so don't wrap them in quotes.
+Make sure you stick to the types defined in the config file. The access token is a string. The ID's are integers so don't wrap them in quotes.
 
 ## Personal Access Token
 
