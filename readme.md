@@ -10,10 +10,37 @@ the binary, or in your home folder. The application will look in the same folder
 cp addns.json.example addns.json
 ```
 
+Make sure you stick tot eh types defined. The access token is a string. The ID's are integers so don't wrap them in quotes.
+
 ## Personal Access Token
 
 To update the DNS of one of your records you need to generate a Personal Access Token from [Linode's Cloud Manager](https://cloud.linode.com/profile/tokens)
 
 Place the Token in the config file, and find the DomainId and RecordId from your cloud manager.
 
+## Compiling
 
+Move in to the addns folder and run the following to build the binary. 
+
+``` 
+go build
+```
+
+## Running
+
+Just run the binary. On success we simply print out the results that are returned from Linode. 
+
+```
+matt@silverark:~$ ./addns
+
+Query Result: {"id": 13860830, "ttl_sec": 300, "priority": 0, "port": 0, "type": "A", "protocol": null, "weight": 0, "name": "ddns", "tag":
+null, "service": null, "target": "89.242.168.63"}
+ 
+```
+
+If there are errors, they will be printed out too.
+
+``` 
+matt@silverark6:~$ ./addns
+Query Result: {"errors": [{"reason": "Invalid OAuth Token"}]}
+```
