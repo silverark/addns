@@ -1,6 +1,6 @@
 # ADDNS - Ark Dynamic DNS
 
-A simple application to update the IP address of an A record of a domain you own in Linode. The application is written in [Go](https://golang.org/)
+A simple application to fetch your External IP address and then to update the IP address of an A record of a domain you own in Linode. This acts as a simple Dynamic DNS service if you schedule it to run form within your office/home. The application is written in [Go](https://golang.org/)
 
 ## Set up the Config File
 Copy and rename the example config file 'addns.json.example' to 'addns.json'. You can place this in the same folder as 
