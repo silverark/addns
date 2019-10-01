@@ -34,7 +34,7 @@ Just run the binary. On success we simply print out the results that are returne
 matt@silverark:~$ ./addns
 
 Query Result: {"id": 13860830, "ttl_sec": 300, "priority": 0, "port": 0, "type": "A", "protocol": null, "weight": 0, "name": "ddns", "tag":
-null, "service": null, "target": "89.242.168.63"}
+null, "service": null, "target": "99.99.168.63"}
  
 ```
 
