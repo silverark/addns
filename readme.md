@@ -10,6 +10,13 @@ the binary, or in your home folder. The application will look in the same folder
 cp addns.json.example addns.json
 ```
 
+To find your home folder, it will look for an environment variable called HOME with a path in it.
+
+```
+matt@silverark:~$ echo $HOME
+/home/matt
+```
+
 Make sure you stick to the types defined in the config file. The access token is a string. The ID's are integers so don't wrap them in quotes.
 
 ## Personal Access Token
@@ -41,6 +48,6 @@ null, "service": null, "target": "99.99.168.63"}
 If there are errors, they will be printed out too.
 
 ``` 
-matt@silverark6:~$ ./addns
+matt@silverark:~$ ./addns
 Query Result: {"errors": [{"reason": "Invalid OAuth Token"}]}
 ```
